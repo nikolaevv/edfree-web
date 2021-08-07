@@ -1,3 +1,5 @@
-import Pages from './pages';
+import MainPage from './main-page';
 
-export default Pages;
+export {
+    MainPage
+};
