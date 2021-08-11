@@ -1,0 +1,19 @@
+.search-section {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-section .search {
+    height: auto;
+    align-items: center;
+}
+
+.bg-searchvbar {
+    width: 30em;
+}
+
+.bg-button {
+    height: auto;
+}

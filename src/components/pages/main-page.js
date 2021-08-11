@@ -1,10 +1,13 @@
 import React from 'react';
+import SearchSection from '../search-section';
 
 import './pages.css';
 
 const MainPage = () => {
     return (
-        <p>Hello world</p>
+        <div>
+            <SearchSection/>
+        </div>
     );
 };
 
