@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
 
-import {Button, Typography, Container} from '@material-ui/core';
-import Fab from '@material-ui/core/Fab';
-import SearchIcon from '@material-ui/icons/Search';
+import {Typography, Container} from '@material-ui/core';
 import TextField from '@material-ui/core/TextField';
 import './search-section.css';
 

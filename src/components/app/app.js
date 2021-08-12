@@ -7,24 +7,29 @@ import Header from '../header';
 import {Container} from '@material-ui/core';
 import './app.css';
 
+const goToResult = ({location}) => {
+    const query = decodeURI(parseQueryParams(location.search));
+    if (query === '') {
+        return <Redirect to="/"/>
+    }
+    return <ResultPage query={query}/>;
+};
+
 const App = () => {
     return (
         <div>
             <Header/>
-            <Route path="/" exact component={MainPage}/>
+
+            <Route 
+                path="/" 
+                exact 
+                component={MainPage}
+            />
 
             <Container>
-                
                 <Route
                     path="/search"
-                    render={({location}) => {
-                        const query = decodeURI(parseQueryParams(location.search));
-                        if (query === '') {
-                            return <Redirect to="/"/>
-                        }
-                        return <ResultPage query={query}/>;
-                    }}
-                />
+                    render={goToResult}/>
             </Container>
         </div>
     );
