@@ -8,7 +8,7 @@ import { withRouter } from 'react-router-dom';
 
 const search = (query, history) => {
     if (query !== '') {
-        history.push(`/search?${query}`);
+        history.push(`/search?q=${query}`);
     }
 };
 
