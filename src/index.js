@@ -9,8 +9,10 @@ import {ThemeProvider, createTheme} from '@material-ui/core/styles';
 
 const theme = createTheme({
 	palette: {
-		type: 'light',
-
+		type: 'dark',
+        primary: {
+            main: '#ecf0f1'
+        }
 	},
 });
 

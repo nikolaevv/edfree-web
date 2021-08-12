@@ -1,34 +1,55 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-import {Button, Typography} from '@material-ui/core';
+import {Button, Typography, Container} from '@material-ui/core';
 import Fab from '@material-ui/core/Fab';
 import SearchIcon from '@material-ui/icons/Search';
 import TextField from '@material-ui/core/TextField';
 import './search-section.css';
 
-const SearchSection = () => {
+import { withRouter } from 'react-router-dom';
+
+const search = (query, history) => {
+    if (query !== '') {
+        history.push(`/search?${query}`);
+    }
+};
+
+const SearchSection = ({history}) => {
+    const [query, setQuery] = useState('');
+
     return (
         <section className="search-section">
-            <Typography >
+            <Container>
+                <Typography variant="h4">
+                    Поиск бесплатных курсов с лучших онлайн-площадок
+                </Typography>
 
-            </Typography>
+                <br/>
 
-            <div className="search">
-                <TextField 
-                    className="bg-searchvbar" 
-                    id="outlined-secondary"
-                    label="Что хотите изучить?"
-                    variant="outlined"
-                    color="primary"
-                />
+                <Typography className="search-description" variant="body2">
+                    Edfree — агрегатор бесплатных курсов и книг. Мы поможем найти тот контент, который подходит именно нам. Образование может и должно быть доступным!
+                </Typography>
 
-                <Fab variant="extended">
-                    <SearchIcon className="button-icon"/>
-                    Navigate
-                </Fab>
-            </div>
+                <div className="search">
+                    <TextField
+                        onKeyUp={(event) => setQuery(event.target.value)}
+                        className="bg-searchvbar" 
+                        id="outlined-secondary"
+                        label="Что хотите изучить?"
+                        variant="outlined"
+                        color="primary"
+                    />
+
+                    <button
+                        onClick={() => search(query, history)}
+                        className="search-button">
+                        Поиск
+                    </button>
+                    
+                </div>
+            </Container>
         </section>
     );
 };
 
-export default SearchSection;
+export default withRouter(SearchSection);

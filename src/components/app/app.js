@@ -11,8 +11,9 @@ const App = () => {
     return (
         <div>
             <Header/>
+            <Route path="/" exact component={MainPage}/>
+
             <Container>
-                <Route path="/" exact component={MainPage}/>
                 
                 <Route
                     path="/search"
