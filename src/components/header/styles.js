@@ -5,9 +5,10 @@ const useStyles = makeStyles((theme) => ({
       flexGrow: 1,
     },
     appBar: {
-      background: '#FFF !important',
+      background: '#272629 !important',
       boxShadow: 'none !important',
       paddingTop: theme.spacing(1),
+      paddingLeft: 0,
       paddingBottom: theme.spacing(1),
     },
     menuButton: {
