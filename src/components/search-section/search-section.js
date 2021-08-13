@@ -6,14 +6,24 @@ import './search-section.css';
 
 import {withRouter} from 'react-router-dom';
 
-const search = (query, history) => {
-    if (query !== '') {
-        history.push(`/search?q=${query}`);
-    }
-};
+
 
 const SearchSection = ({history}) => {
     const [query, setQuery] = useState('');
+
+    const search = () => {
+        if (query !== '') {
+            history.push(`/search?q=${query}`);
+        }
+    };
+
+    const onKeyPressed = (event) => {
+        setQuery(event.target.value);
+        console.log(event.keyCode);
+        if (event.keyCode === 13) {
+            search();
+        }
+    };
 
     return (
         <section className="search-section">
@@ -30,7 +40,7 @@ const SearchSection = ({history}) => {
 
                 <div className="search">
                     <TextField
-                        onKeyUp={(event) => setQuery(event.target.value)}
+                        onKeyUp={onKeyPressed}
                         className="bg-searchvbar"
                         id="search"
                         label="Что хотите изучить?"
@@ -39,7 +49,7 @@ const SearchSection = ({history}) => {
                     />
 
                     <button
-                        onClick={() => search(query, history)}
+                        onClick={search}
                         className="search-button">
                         Искать
                     </button>
