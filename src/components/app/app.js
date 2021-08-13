@@ -1,6 +1,6 @@
 import React from 'react';
 import {Route, Redirect} from 'react-router';
-import {MainPage, ResultPage, OwnersPage} from '../pages';
+import {MainPage, ResultPage, OwnersPage, ApiPage} from '../pages';
 import {parseQueryParams} from '../../utils';
 import Header from '../header';
 import Footer from '../footer';
@@ -43,7 +43,14 @@ const App = () => {
                     path="/owners" 
                     component={OwnersPage}
                 />
+
+                
             </Container>
+
+            <Route 
+                path="/api" 
+                component={ApiPage}
+            />
 
             <Footer/>
         </div>
