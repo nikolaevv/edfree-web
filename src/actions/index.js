@@ -12,7 +12,12 @@ const booksAdded = (books) => {
     };
 };
 
+const reset = {
+    type: 'RESET'
+}
+
 export {
+    reset,
     coursesAdded,
     booksAdded
 };

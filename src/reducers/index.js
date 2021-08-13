@@ -19,6 +19,9 @@ const reducer = (state = initialState, action) => {
                 books: [...state.books, ...action.payload]
             };
 
+        case 'RESET':
+            return initialState;
+
         default:
             return state;
     };
