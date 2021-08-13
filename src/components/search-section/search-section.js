@@ -30,9 +30,10 @@ const SearchSection = ({history}) => {
 
                 <div className="search">
                     <TextField
+
                         onKeyUp={(event) => setQuery(event.target.value)}
                         className="bg-searchvbar"
-                        id="outlined-secondary"
+                        id="search"
                         label="Что хотите изучить?"
                         variant="outlined"
                         color="primary"

@@ -1,8 +1,9 @@
 import React from 'react';
 import {Route, Redirect} from 'react-router';
-import {MainPage, ResultPage} from '../pages';
+import {MainPage, ResultPage, OwnersPage} from '../pages';
 import {parseQueryParams} from '../../utils';
 import Header from '../header';
+import Footer from '../footer';
 import {reset} from '../../actions';
 import {useDispatch} from 'react-redux';
 
@@ -23,7 +24,7 @@ const App = () => {
     const dispatch = useDispatch();
 
     return (
-        <div>
+        <div className="main-container">
             <Header/>
 
             <Route 
@@ -35,8 +36,16 @@ const App = () => {
             <Container>
                 <Route
                     path="/search"
-                    render={({location}) => goToResult(location, dispatch)}/>
+                    render={({location}) => goToResult(location, dispatch)}
+                />
+
+                <Route 
+                    path="/owners" 
+                    component={OwnersPage}
+                />
             </Container>
+
+            <Footer/>
         </div>
     );
 };

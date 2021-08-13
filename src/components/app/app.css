@@ -1,4 +1,12 @@
 body {
     margin: 0;
     background-color: #f7f8ff;
+    
+}
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

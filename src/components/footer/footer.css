@@ -1,0 +1,36 @@
+.footer {
+    background-color: #131212;
+    padding-top: 4em;
+    padding-bottom: 3em;
+}
+
+.link-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    margin-bottom: 2em;
+    justify-content: space-between;
+}
+
+.link {
+    padding-bottom: 1em;
+    width: 50%;
+    color: #757575 !important;
+    cursor: pointer;
+}
+
+.link a {
+    color: #757575 !important;
+    margin-bottom: 2em;
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .link-box {
+        width: 100%;
+    }
+
+    .link {
+        width: 50%;
+    }
+}
