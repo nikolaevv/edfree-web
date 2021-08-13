@@ -4,7 +4,7 @@ import {Typography, Container} from '@material-ui/core';
 import TextField from '@material-ui/core/TextField';
 import './search-section.css';
 
-import { withRouter } from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 
 const search = (query, history) => {
     if (query !== '') {
@@ -31,7 +31,7 @@ const SearchSection = ({history}) => {
                 <div className="search">
                     <TextField
                         onKeyUp={(event) => setQuery(event.target.value)}
-                        className="bg-searchvbar" 
+                        className="bg-searchvbar"
                         id="outlined-secondary"
                         label="Что хотите изучить?"
                         variant="outlined"
@@ -41,7 +41,7 @@ const SearchSection = ({history}) => {
                     <button
                         onClick={() => search(query, history)}
                         className="search-button">
-                        Поиск
+                        Искать
                     </button>
                     
                 </div>

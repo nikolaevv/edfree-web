@@ -45,6 +45,18 @@
     height: auto;
 }
 
+.MuiOutlinedInput-notchedOutline {
+    border-color: rgba(255, 255, 255, 0.23) !important;
+}
+
+.makeStyles-mainSearchBar-5 .MuiInputBase-root {
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.makeStyles-mainSearchBar-5 .MuiFormLabel-root {
+    color: rgba(255, 255, 255, 1) !important;
+}
+
 @media (max-width: 900px) {
     .bg-searchvbar {
         width: 15em;
