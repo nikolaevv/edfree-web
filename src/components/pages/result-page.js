@@ -16,6 +16,7 @@ import Checkbox from '@material-ui/core/Checkbox';
 import Chip from '@material-ui/core/Chip';
 import {Typography} from '@material-ui/core';
 import { useStyles, getStyles, MenuProps } from './styles';
+import NotFoundIndicator from '../not-found-indicator';
 
 const Filters = ({setSortType, setContentTypes, sortType, contentTypes}) => {
     const classes = useStyles();
@@ -80,9 +81,12 @@ const ResultPage = ({query}) => {
     const useCoursesSelector = () => useSelector((state) => state.courses);
     const useBooksSelector = () => useSelector((state) => state.books);
 
-    const books = useCoursesSelector();
-    const courses = useBooksSelector();
-    const foundItemsNum = books.length + courses.length;
+    const foundItemsNum = useSelector((state) => state.num);
+    const anyItemsFound = useSelector((state) => state.anyItemsFound);
+
+    if (!anyItemsFound) {
+        return <NotFoundIndicator/>
+    }
 
     return (
         <div className="result-page">

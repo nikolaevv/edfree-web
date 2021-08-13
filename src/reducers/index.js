@@ -1,22 +1,30 @@
 const initialState = {
     books: [],
-    courses: []
+    courses: [],
+    num: 0,
+    anyItemsFound: true
 };
 
 const reducer = (state = initialState, action) => {
+    let recentNum;
+
     switch (action.type) {
         case 'COURSES_ADDED':
-            console.log(state)
+            recentNum = state.num + action.payload.length;
             return {
                 ...state,
-                courses: [...state.courses, ...action.payload]
+                courses: [...state.courses, ...action.payload],
+                num: recentNum,
+                anyItemsFound: recentNum > 0 ? true : false,
             };
 
         case 'BOOKS_ADDED':
-            console.log(state)
+            recentNum = state.num + action.payload.length;
             return {
                 ...state,
-                books: [...state.books, ...action.payload]
+                books: [...state.books, ...action.payload],
+                num: recentNum,
+                anyItemsFound: recentNum > 0 ? true : false,
             };
 
         case 'RESET':
