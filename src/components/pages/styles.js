@@ -16,6 +16,16 @@ const useStyles = makeStyles((theme) => ({
     noLabel: {
       marginTop: theme.spacing(3),
     },
+    root: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      '& > *': {
+        marginRight: theme.spacing(3),
+        marginBottom: theme.spacing(3),
+        width: theme.spacing(20),
+        height: theme.spacing(20),
+      },
+    },
 }));
 
 function getStyles(name, personName, theme) {

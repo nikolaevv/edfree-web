@@ -17,6 +17,7 @@
 
 .page-title {
     margin-bottom: 1em !important;
+    margin-top: 1em !important;
 }
 
 .owners-page {
@@ -41,4 +42,24 @@
 
 #demo-mutiple-chip {
     color: #FFF;
+}
+
+.platform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profession-title {
+    margin-top: 1em !important;
+}
+
+.platform-logo {
+    width: 6em;
+}
+
+.section {
+    margin-top: 4em;
+    margin-bottom: 4em;
 }

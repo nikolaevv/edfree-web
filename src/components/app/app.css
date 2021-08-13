@@ -4,6 +4,10 @@ body {
     
 }
 
+img {
+    pointer-events: none;
+}
+
 .main-container {
     min-height: 100vh;
     display: flex;
