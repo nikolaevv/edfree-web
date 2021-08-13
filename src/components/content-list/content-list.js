@@ -33,10 +33,11 @@ const ContentList = ({code, title, query, apiService, action, useContentSelector
 
             <div className="result-items">
                 {
-                    items.map((item) => {
+                    items.map((item, idx) => {
                         const {cover, link, source, title} = item;
                         return (
-                            <ContentListItem 
+                            <ContentListItem
+                                key={idx}
                                 cover={cover} 
                                 link={link} 
                                 source={source} 

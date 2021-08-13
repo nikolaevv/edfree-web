@@ -13,9 +13,18 @@ const apiService = new ApiService();
 
 const theme = createTheme({
 	palette: {
-		type: 'dark',
+		type: 'light',
         primary: {
-            main: '#ecf0f1'
+            main: '#FFF',
+            contrastText: '#FFF',
+            light: '#FFF',
+            dark: '#FFF',
+        },
+        secondary: {
+            main: '#bdc3c7',
+            contrastText: '#bdc3c7',
+            light: '#bdc3c7',
+            dark: '#bdc3c7',
         }
 	},
 });

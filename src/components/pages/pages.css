@@ -9,3 +9,27 @@
 .result-block .result-items {
     margin-top: 1em;
 }
+
+.found-num {
+    color: gray;
+    margin-bottom: 1em;
+}
+
+.filters {
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+    display: flex;
+    align-items: flex-end;
+}
+
+.filter {
+    margin-right: 2em;
+}
+
+.filter-title {
+    font-weight: 500 !important;
+}
+
+#demo-mutiple-chip {
+    color: #FFF;
+}
