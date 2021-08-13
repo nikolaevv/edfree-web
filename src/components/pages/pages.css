@@ -15,6 +15,15 @@
     margin-bottom: 1em;
 }
 
+.page-title {
+    margin-bottom: 1em !important;
+}
+
+.owners-page {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
 .filters {
     margin-top: 1.5em;
     margin-bottom: 2em;
