@@ -1,57 +1,65 @@
 import React from 'react';
+import {Link, withRouter} from 'react-router-dom';
 import {supportMailAdress} from '../../config';
 
-import {Container, Typography, Link} from '@material-ui/core';
+import {Container, Typography, Link as TextLink} from '@material-ui/core';
 import './footer.css';
 
-const LinkBox = () => {
+const LinkBox = ({location, history}) => {
     return (
         <div className="link-box">
             <Typography className="link">
-                <div href="#" onClick={() => {
-                    window.scrollTo(0, 0);
-                    const searchBar = document.getElementById('search');
-                    searchBar.focus();
-                }}>
-                    Поиск
-                </div>
+                <TextLink>
+                    <span onClick={() => {
+                        history.push('/');
+                        window.scrollTo(window.top);
+                        const searchBar = document.getElementById('search');
+                        if (searchBar) {
+                            searchBar.focus()
+                        };
+                    }}>
+                        Поиск
+                    </span>
+                </TextLink>
             </Typography>
 
             <Typography className="link">
-                <Link href={`mailto:${supportMailAdress}`}>
+                <TextLink href={`mailto:${supportMailAdress}`}>
                     Обратная связь
-                </Link>
+                </TextLink>
             </Typography>
 
             <Typography className="link">
-                <Link href="https://github.com/nikolaevv/react-edfree">
+                <TextLink href="https://github.com/nikolaevv/react-edfree">
                     GitHub
-                </Link>
+                </TextLink>
             </Typography>
 
             <Typography className="link">
-                <Link href="/api">
+                <Link to="/api">
+                    
                     API
+                    
                 </Link>
             </Typography>
 
 
             <Typography className="link">
-                <Link href="/owners">
+                <TextLink href="/owners">
                     Правообладателям
-                </Link>
+                </TextLink>
             </Typography>
         </div>
     );
 };
 
-const Footer = () => {
+const Footer = ({history}) => {
     const currentYear = new Date().getFullYear();
 
     return (
         <footer className="footer">
             <Container>
-                <LinkBox/>
+                <LinkBox history={history}/>
 
                 <Typography color="primary" variant="body2" component="p">
                     Edfree, {currentYear}
@@ -61,4 +69,4 @@ const Footer = () => {
     );
 };
 
-export default Footer;
+export default withRouter(Footer);

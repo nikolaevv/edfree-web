@@ -19,7 +19,12 @@
     cursor: pointer;
 }
 
-.link a {
+a {
+    color: #757575 !important;
+    text-decoration: none;
+}
+
+.link > * {
     color: #757575 !important;
     margin-bottom: 2em;
     margin: 0;

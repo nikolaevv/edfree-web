@@ -67,7 +67,7 @@ const ProfessionsSection = () => {
 
             <div className={styleClasses.root}>
                 <Paper className="platform">
-                    <img draggable={false} className="platform-logo" alt="profession icon" src={programmingIcon}/>
+                    <img className="platform-logo" alt="profession icon" src={programmingIcon}/>
                     <Typography className="profession-title" variant="body2">Программирование</Typography>
                 </Paper>
 
