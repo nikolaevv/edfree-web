@@ -15,7 +15,11 @@ const useStyles = makeStyles((theme) => ({
       flex: '1 0 auto',
     },
     cover: {
-      width: "10em",
+      width: "12em",
+
+      [theme.breakpoints.down('sm')]: {
+        width: "30em"
+      },
     },
     controls: {
       display: 'flex',
