@@ -17,9 +17,6 @@ const useStyles = makeStyles((theme) => ({
     cover: {
       width: "10em",
     },
-    description: {
-      width: '50%'
-    },
     controls: {
       display: 'flex',
       alignItems: 'center',

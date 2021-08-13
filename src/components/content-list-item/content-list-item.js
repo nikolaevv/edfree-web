@@ -7,9 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import useStyles from './styles';
 import './content-list-item.css';
 
-import image from './1.png';
-
-const ContentListItem = () => {
+const ContentListItem = ({cover, link, source, title}) => {
     const classes = useStyles();
 
     return (
@@ -17,13 +15,13 @@ const ContentListItem = () => {
             <div className={classes.details}>
                 <CardContent className={classes.content}>
                     <Typography component="h5" variant="h5">
-                        "Поколение Python": курс для начинающих
+                        {title}
                     </Typography>
 
                     <Typography className={classes.pos} color="textSecondary">
-                        Stepik
+                        {source}
                     </Typography>
-                    <Typography className={classes.description} variant="body2" component="p">
+                    <Typography className="description" variant="body2" component="p">
                         Курс с кучей тренировочных задач, удобный как для самостоятельного изучения, так и для работы в группе в рамках внеурочной деятельности.
                     </Typography>
                 
@@ -32,12 +30,15 @@ const ContentListItem = () => {
                
                 </div>
                 <CardActions>
-                    <Button size="small">Перейти</Button>
+                    <a href={link}>
+                        <Button size="small">Перейти</Button>
+                    </a>
+
                 </CardActions>
             </div>
             <CardMedia
                 className={classes.cover}
-                image={image}
+                image={cover}
                 title="Live from space album cover"
             />
         </Card>

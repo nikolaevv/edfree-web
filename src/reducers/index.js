@@ -6,15 +6,17 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case 'COURSES_ADDED':
+            console.log(state)
             return {
                 ...state,
-                courses: state.courses.push(...action.payload)
+                courses: [...state.courses, ...action.payload]
             };
 
         case 'BOOKS_ADDED':
+            console.log(state)
             return {
                 ...state,
-                books: state.books.push(...action.payload)
+                books: [...state.books, ...action.payload]
             };
 
         default:
