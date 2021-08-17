@@ -6,8 +6,6 @@ import './search-section.css';
 
 import {withRouter} from 'react-router-dom';
 
-
-
 const SearchSection = ({history}) => {
     const [query, setQuery] = useState('');
 

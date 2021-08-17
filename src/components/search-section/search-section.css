@@ -8,6 +8,10 @@
     background: url('./background-main.svg');
 }
 
+#search-label {
+    color: #bdc3c7;
+}
+
 .search-section .search {
     margin-top: 3em;
     height: auto;
