@@ -36,20 +36,8 @@ const PlatformsSection = () => {
                     <img className="platform-logo" alt="platform logo" src={stepikLogo}/>
                 </Paper>
 
-                <Paper title="Udemy" className="platform">
-                    <img className="platform-logo" alt="platform logo" src={udemyLogo}/>
-                </Paper>
-
                 <Paper title="Флибуста" className="platform">
                     <img className="platform-logo" alt="platform logo" src={flibustaLogo}/>
-                </Paper>
-
-                <Paper title="Минобрнауки РФ" className="platform">
-                    <img className="platform-logo" alt="platform logo" src={minobrLogo}/>
-                </Paper>
-
-                <Paper title="Coursera" className="platform">
-                    <img className="platform-logo" alt="platform logo" src={courseraLogo}/>
                 </Paper>
             </div>
         </Container>
