@@ -7,8 +7,9 @@ import Typography from '@material-ui/core/Typography';
 import useStyles from './styles';
 import './content-list-item.css';
 
-const ContentListItem = ({cover, link, source, title}) => {
+const ContentListItem = ({item}) => {
     const classes = useStyles();
+    const {cover, link, source, title, description} = item;
 
     return (
         <Card className={classes.root}>
@@ -22,7 +23,7 @@ const ContentListItem = ({cover, link, source, title}) => {
                         {source}
                     </Typography>
                     <Typography className="description" variant="body2" component="p">
-                        Курс с кучей тренировочных задач, удобный как для самостоятельного изучения, так и для работы в группе в рамках внеурочной деятельности.
+                        {description}
                     </Typography>
                 
                 </CardContent>
