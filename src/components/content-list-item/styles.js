@@ -10,6 +10,10 @@ const useStyles = makeStyles((theme) => ({
     details: {
       display: 'flex',
       flexDirection: 'column',
+      width: '70%',
+      [theme.breakpoints.down('sm')]: {
+        width: '70%',
+      },
     },
     content: {
       flex: '1 0 auto',
@@ -18,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
       width: "12em",
 
       [theme.breakpoints.down('sm')]: {
-        width: "30em"
+        width: "10em"
       },
     },
     controls: {

@@ -1,10 +1,9 @@
 .description {
-    width: 50%;
+    width: 70%;
 }
 
 @media (max-width: 900px) {
     .description {
         width: 100%;
     }
-    
 }
