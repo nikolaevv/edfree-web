@@ -1,7 +1,7 @@
 # Edfree 
 
 [![Generic badge](https://img.shields.io/badge/Web%20App-Up-%3Cgreen%3E.svg)](https://edfree.ru/)
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/nikolaevv/react-edfree/blob/main/LICENSE)
 
 React + Redux web app for finding free courses and books from different resources (Stepik, Flibusta, etc) that works by own [API](https://github.com/nikolaevv/edfree-api). It supports search by title, author and keywords. 
 
@@ -11,7 +11,7 @@ Why it is required service:
 
 ![Alt Text](https://i.imgur.com/zl6gqYM.png)
 
-## Getting started
+## Install
 
 You can view a live demo over at https://edfree.ru/
 
