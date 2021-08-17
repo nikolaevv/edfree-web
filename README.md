@@ -1,4 +1,5 @@
-# Edfree [![Web app]()](https://edfree.ru)
+# Edfree 
+[![Web app]()](https://edfree.ru)
 
 React + Redux web app for finding free courses and books from different resources (Stepik, Flibusta, etc) that works by own [API](https://github.com/nikolaevv/edfree-api). It supports search by title, author and keywords. 
 
@@ -19,7 +20,7 @@ To get the frontend running locally:
 - `npm install` to install all req'd dependencies
 - `npm start` to start the local server
 
-Local web server will use port 3000
+Local web server will use port 3000.
 
 ## Table of contents
 
@@ -34,14 +35,11 @@ Local web server will use port 3000
         - Content List
             - Content List Item
     - Footer
-
     - Spinner
     - Error Indicator
     - Not Found Indicator
-
 - Services
     - Edfree Api Service
-
 - Redux Store
     - Store
     - Reducer
