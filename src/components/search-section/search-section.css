@@ -12,6 +12,10 @@
     color: #bdc3c7;
 }
 
+#search {
+    color: #FFF;
+}
+
 .search-section .search {
     margin-top: 3em;
     height: auto;
