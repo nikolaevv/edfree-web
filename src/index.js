@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Switch} from 'react-router-dom';
 import ErrorBoundry from './components/error-boundry';
 import {ThemeProvider, createTheme} from '@material-ui/core/styles';
 import {ApiServiceProvider} from './components/api-service-context';
+import ScrollToTop from './components/scroll-to-top';
 import ApiService from './services/api-service';
 
 const apiService = new ApiService();
@@ -35,9 +36,11 @@ ReactDOM.render(
             <ThemeProvider theme={theme}>
                 <ApiServiceProvider value={apiService}>
                     <Router>
-                        <Switch>
-                            <App/>
-                        </Switch>
+                        <ScrollToTop>
+                            <Switch>
+                                <App/>
+                            </Switch>
+                        </ScrollToTop>
                     </Router>
                 </ApiServiceProvider>
             </ThemeProvider>
