@@ -9,6 +9,12 @@ const LinkBox = ({location, history}) => {
     return (
         <div className="link-box">
             <Typography className="link">
+                <Link to="/">
+                    Главная
+                </Link>
+            </Typography>
+
+            <Typography className="link">
                 <TextLink>
                     <span onClick={() => {
                         history.push('/');
@@ -37,12 +43,9 @@ const LinkBox = ({location, history}) => {
 
             <Typography className="link">
                 <Link to="/api">
-                    
                     API
-                    
                 </Link>
             </Typography>
-
 
             <Typography className="link">
                 <TextLink href="/owners">
