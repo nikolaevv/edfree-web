@@ -1,5 +1,5 @@
 export default class ApiService {
-    _apiBase = 'http://127.0.0.1:8000'
+    _apiBase = 'https://radiant-anchorage-55346.herokuapp.com'
 
     getResource = async (url, params) => {
         let path_url = new URL(`${this._apiBase}${url}`)
