@@ -17,14 +17,30 @@ const useStyles = makeStyles((theme) => ({
       marginTop: theme.spacing(3),
     },
     root: {
-      display: 'flex',
-      flexWrap: 'wrap',
-      '& > *': {
+        display: 'flex',
+        flexWrap: 'wrap',
+        [theme.breakpoints.down('600')]: {
+            justifyContent: "space-between"
+        },
+
+        '& > *': {
         marginRight: theme.spacing(3),
         marginBottom: theme.spacing(3),
-        width: theme.spacing(20),
-        height: theme.spacing(20),
-      },
+        width: "10em",
+        height: "10em",
+        
+        [theme.breakpoints.down('600')]: {
+            width: "45%",
+            '& > *:nth-child(2n)': {
+                marginRight: 0
+            }
+        },
+        [theme.breakpoints.down('350')]: {
+            width: "100%",
+            marginRight: 0
+        }
+    },
+    
     },
 }));
 

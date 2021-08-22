@@ -35,7 +35,6 @@
     border-radius: 5%;
     padding: 15px 32px;
     font-size: 1em;
-    margin-left: 1em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -47,6 +46,7 @@
 
 .bg-searchvbar {
     width: 30em;
+    margin-right: 1em !important;
 }
 
 .bg-button {
@@ -73,9 +73,11 @@
     .search-description {
         width: 100%;
     }
+}
 
+@media (max-width: 415px) {
     .search-button {
-        margin-left: 0;
-        margin-top: 0.5em;
+        margin-left: 0 !important;
+        margin-top: 1em;
     }
 }

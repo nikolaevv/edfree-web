@@ -65,7 +65,8 @@
 }
 
 @media (max-width: 900px) {
-    .platform-logo {
-        width: 4em;
+    .section {
+        margin-top: 2em;
+        margin-bottom: 2em;
     }
 }
