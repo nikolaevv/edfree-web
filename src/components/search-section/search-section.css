@@ -73,4 +73,9 @@
     .search-description {
         width: 100%;
     }
+
+    .search-button {
+        margin-left: 0;
+        margin-top: 0.5em;
+    }
 }
