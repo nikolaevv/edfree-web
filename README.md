@@ -13,7 +13,7 @@ Why it is required service:
 
 ## Install
 
-You can view a live demo over at https://react-edfree.vercel.app/
+You can view a live demo over at https://edfree.vercel.app/
 
 To get the frontend running locally:
 
