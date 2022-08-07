@@ -1,9 +1,9 @@
 # Edfree 
 
-[![Generic badge](https://img.shields.io/badge/Web%20App-Up-%3Cgreen%3E.svg)](https://react-edfree.vercel.app/)
-[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/nikolaevv/react-edfree/blob/main/LICENSE)
+[![Generic badge](https://img.shields.io/badge/Web%20App-Up-%3Cgreen%3E.svg)](https://edfree.vercel.app/)
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/nikolaevv/edfree-web/blob/main/LICENSE)
 
-React + Redux web app for finding free courses and books from different resources (Stepik, Flibusta, etc) that works by own [API](https://github.com/nikolaevv/edfree-api). It supports search by title, author and keywords. 
+React + Redux web app for finding free courses and books from different resources (Stepik, Flibusta, etc) that works by own API. It supports search by title, author and keywords. 
 
 Why it is required service:
 - It quickly collects the necessary information from a variety of services
@@ -17,8 +17,8 @@ You can view a live demo over at https://edfree.vercel.app/
 
 To get the frontend running locally:
 
-- `git clone https://github.com/nikolaevv/react-edfree.git` to clone repository
-- `cd react-edfree`
+- `git clone https://github.com/nikolaevv/edfree-web.git` to clone repository
+- `cd edfree-web`
 - `npm install` to install all req'd dependencies
 - `npm start` to start the local server
 
